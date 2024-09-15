@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HodlInfo Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>HODLINFO</h1>
+    </div>
+
+    <!-- Middle Top Buttons Section -->
+    <div class="currency-options">
+      <button class="currency-btn">INR <span class="dropdown-icon">▼</span></button>
+      <button class="currency-btn">BTC <span class="dropdown-icon">▼</span></button>
+      <button class="currency-btn buy-btn">BUY BTC</button>
+    </div>
+
+    <!-- Center Section with percentage changes and price -->
+    <div class="info-section">
+      <div class="change-block">
+        <span>0.1%</span>
+        <p>5 Mins</p>
+      </div>
+      <div class="change-block">
+        <span>0.96%</span>
+        <p>1 Hour</p>
+      </div>
+      <div class="price-display">
+        <p>Best Price to Trade</p>
+        <h2>₹ 26,56,110</h2>
+      </div>
+      <div class="change-block">
+        <span>2.73%</span>
+        <p>1 Day</p>
+      </div>
+      <div class="change-block">
+        <span>7.51%</span>
+        <p>7 Days</p>
+      </div>
+    </div>
+
+    <!-- Right section with buttons -->
+    <div class="right-section">
+      <button class="telegram-btn">Connect Telegram</button>
+      <div class="toggle-container">
+        <input type="checkbox" id="theme-toggle" class="toggle-switch">
+        <label for="theme-toggle"></label>
+      </div>
+    </div>
+  </header>
+
+  
+  <section id="main">
+    <div class="stats">
+      <p>Best Price to Trade</p>
+      <h2 id="best-price"></h2>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Platform</th>
+          <th>Last Traded Price</th>
+          <th>Buy Price</th>
+          <th>Sell Price</th>
+          <th>Volume</th>
+          <th>Base Unit</th>
+        </tr>
+      </thead>
+      <tbody id="tickers-table">
+        <!-- Rows will be dynamically injected here -->
+      </tbody>
+    </table>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
